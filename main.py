@@ -37,7 +37,6 @@ parameters = {
 response = requests.post(url=exercise_endpoint,
                          json=parameters, headers=headers)
 result = response.json()
-# print(result)
 
 for exercise in result["exercises"]:
     sheet_inputs = {
